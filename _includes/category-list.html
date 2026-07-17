@@ -1,0 +1,8 @@
+{% if page.categories %}
+<div class="post-categories">
+  <strong>Categories:</strong>
+  {% for category in page.categories %}
+    <a href="/thebossmind/categories/{{ category }}/" class="badge badge-primary">{{ category | capitalize }}</a>
+  {% endfor %}
+</div>
+{% endif %}
