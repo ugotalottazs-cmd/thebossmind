@@ -1,0 +1,9 @@
+---
+layout: default
+---
+
+<div class="category-page">
+  <h1>Category: {{ page.category | capitalize }}</h1>
+  
+  {% include posts-by-category.html category=page.category %}
+</div>
