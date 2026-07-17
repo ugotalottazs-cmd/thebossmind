@@ -1,0 +1,30 @@
+title: The Boss Mind
+description: WordPress content migrated to Jekyll
+baseurl: ""
+url: "https://ugotalottazs-cmd.github.io/thebossmind"
+repository: ugotalottazs-cmd/thebossmind
+
+# Jekyll settings
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-paginate-v2
+
+# Collections for organized posts
+collections:
+  posts:
+    output: true
+    permalink: /:collection/:categories/:title/
+
+# Pagination
+pagination:
+  enabled: true
+  per_page: 10
+  permalink: /page/:num/
+
+# Markdown processor
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
