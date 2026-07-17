@@ -1,0 +1,9 @@
+---
+layout: default
+---
+
+<div class="tag-page">
+  <h1>Tag: {{ page.tag | capitalize }}</h1>
+  
+  {% include posts-by-tag.html tag=page.tag %}
+</div>
